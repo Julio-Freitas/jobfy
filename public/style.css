@@ -3,9 +3,15 @@ body, html {height: 100%;}
 body{font-family: 'Roboto', Helvetica, sans-serif}
 
 /** custom **/
+header .container{
+    padding: 10px 2%;
+}
 .header-home{
     text-align: center;
-    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header-home p{
     font-weight: 700;
@@ -14,12 +20,35 @@ body{font-family: 'Roboto', Helvetica, sans-serif}
 }
 .container {
     max-width: 1280px;
-    padding: 0 2%;
+    padding: 20px 2%;
     margin: 0 auto;
 }
-img{
+a{text-decoration: none;}
+a:hover{
+    font-weight: bold;
+}
+a.excluir, a.editar{  
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+a.excluir{
+    background-color: red;
+}
+
+a.editar{
+    background-color: #3498db;
+}
+a.editar:hover, a.excluir:hover{
+   box-shadow: 0px 1px 0 1px #000;
+    transition: all 0.3s;
+}
+header img{
     max-width: 100%;
-    width: 234px;
+    width: 100px;
 }
 h2{
     background-color: #c4c4c4;
@@ -34,13 +63,29 @@ div h3{
 ul {
     list-style: none;
 }
-ul li{
+ul li {
     padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex-wrap: wrap
+}
+/** content **/
+.content{
+    padding: 0 5px;
+    margin: 15px 0;
 }
 footer {
+    margin-top: 50px;
     background-color: #000000;
-    padding: 10px;
+    padding: 10px ;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 footer p {
     text-align: center;

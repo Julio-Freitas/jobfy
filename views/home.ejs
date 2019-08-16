@@ -2,10 +2,10 @@
 <%- include('header') %>
 
 <div class="container">
-    <h2>Open roles:</h2>
+    <h2>Vagas de Emprego:</h2>
     <% categorias.forEach( categoria => {%> 
         
-        <div>
+        <div class="content">
             <h3><%-categoria.categoria %></h3>
             <ul>
                 <% categoria.vagas.forEach( vaga => { %>
