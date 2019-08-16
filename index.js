@@ -3,6 +3,7 @@ const sqlite = require('sqlite');
 const bodyParse = require('body-parser')
 const app = express();
 
+const port = process.even.PORT || 3000 ;
 const dbConnection = sqlite.open('banco.sqlite', { Promise })
 
 app.set('view engine', 'ejs');
@@ -146,7 +147,7 @@ const init = async() => {
 
 init();
 
-app.listen('3000', (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log('Servidor não rodou!')
     } else {
