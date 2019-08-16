@@ -1,0 +1,91 @@
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none}
+body, html {height: 100%;}
+body{font-family: 'Roboto', Helvetica, sans-serif}
+
+/** custom **/
+.header-home{
+    text-align: center;
+    margin: 10px auto;
+}
+.header-home p{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.container {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    width: 234px;
+}
+h2{
+    background-color: #c4c4c4;
+    padding: 15px 5px;
+    margin: 5px 0;
+}
+div h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+ul {
+    list-style: none;
+}
+ul li{
+    padding: 10px 0;
+}
+footer {
+    background-color: #000000;
+    padding: 10px;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    font-size: 15px;
+    color: #fff
+}
+
+/** formulário **/
+form label{
+    font-weight: 600;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3215686274509804);
+    display: block;
+    margin: 20px 0 5px 0;
+}
+form input,form textarea {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%
+}
+form textarea{
+    border: 1px solid #ddd;
+    height: 80px;
+    resize: vertical;
+}
+form select{
+    margin: 10px 0 5px 0;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+form button{
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3498db;
+    border: 0;
+    margin: 20px auto;
+    border-radius: 3px;
+    display: block;
+}
+form button:hover{
+    transform: translateY(1px);
+    box-shadow: 1px 1px 1px #000;
+    transition: all 0.5s;
+}
